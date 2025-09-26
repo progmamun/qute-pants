@@ -44,38 +44,58 @@
 }
 
 :root {
+  --cadet-gray: oklch(0.7274 0.0364 217.28);
+  --sky-blue: oklch(0.7938 0.057 225.95);
+  --blue-munsell: oklch(0.6283 0.0619 218.63);
+  --white: oklch(0.994 0 0);
+  --celestial-blue: oklch(0.6524 0.0953 231.94);
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(28.377% 0.00469 248.154);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+
+  /* Updated with your blue color palette */
+  --background: var(--white); /* Clean white background */
+  --foreground: oklch(0.2 0.04 217); /* Darker blue-gray for text */
+  --card: var(--white);
+  --card-foreground: var(--foreground);
+  --popover: var(--white);
+  --popover-foreground: var(--foreground);
+
+  /* Primary color set to your sky-blue for main actions */
+  --primary: var(--sky-blue);
+  --primary-foreground: var(--white);
+
+  /* Secondary color set to cadet-gray for softer elements */
+  --secondary: var(--cadet-gray);
+  --secondary-foreground: oklch(0.15 0.03 217);
+
+  /* Muted colors using your blue palette */
+  --muted: oklch(0.95 0.02 217); /* Light blue-gray */
+  --muted-foreground: oklch(0.5 0.02 217); /* Medium blue-gray */
+
+  /* Accent colors using celestial-blue */
+  --accent: var(--celestial-blue);
+  --accent-foreground: var(--white);
+
+  --destructive: oklch(0.577 0.245 27.325); /* Keep red for destructive */
+  --border: oklch(0.9 0.015 217); /* Subtle blue border */
+  --input: oklch(0.9 0.015 217);
+  --ring: var(--celestial-blue); /* Blue ring for focus states */
+
+  /* Chart colors using your blue palette */
+  --chart-1: var(--sky-blue);
+  --chart-2: var(--celestial-blue);
+  --chart-3: var(--blue-munsell);
+  --chart-4: var(--cadet-gray);
+  --chart-5: oklch(0.85 0.07 225); /* Lighter blue variant */
+
+  /* Sidebar colors using your blue palette */
+  --sidebar: var(--white);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--sky-blue);
+  --sidebar-primary-foreground: var(--white);
+  --sidebar-accent: oklch(0.95 0.02 217);
+  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-border: oklch(0.9 0.015 217);
+  --sidebar-ring: var(--celestial-blue);
 }
 
 @layer base {
