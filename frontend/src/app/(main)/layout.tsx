@@ -1,3 +1,7 @@
+import { Footer } from "@/components/shared/Footer";
+import { Navigation } from "@/components/shared/Navigation";
+import { TopBar } from "@/components/shared/TopBar";
+
 export default function MainLayout({
   children,
 }: {
@@ -5,7 +9,8 @@ export default function MainLayout({
 }) {
   return (
     <div className="min-h-screen text-foreground bg-background">
-      <Navbar />
+      <TopBar />
+      <Navigation />
       {children}
       <Footer />
     </div>
