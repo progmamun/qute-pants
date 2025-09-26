@@ -1,5 +1,5 @@
 import { Product } from "@/types";
-import { ProductCard } from "./../../../ui/core/ProductCard";
+import { ProductCard } from "../../../ui/core/ProductCard";
 
 export const ProductsSection: React.FC = () => {
   const products: Product[] = [

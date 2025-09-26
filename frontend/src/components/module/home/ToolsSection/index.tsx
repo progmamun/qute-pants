@@ -44,7 +44,7 @@ export const ToolsSection: React.FC = () => {
             <a
               key={tool.id}
               href={tool.link}
-              className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl text-center hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer" // Removed animate-fadeInUp
+              className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl text-center hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer animate-fadeInUp"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="text-blue-500 mb-4 group-hover:rotate-360 transition-transform duration-500">

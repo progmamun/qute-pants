@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Play, X } from "lucide-react";
 
 export const WelcomeSection: React.FC = () => {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -37,6 +38,7 @@ export const WelcomeSection: React.FC = () => {
                 <button
                   onClick={() => setVideoModalOpen(true)}
                   className="absolute inset-0 flex items-center justify-center"
+                  aria-label="Open video preview"
                 >
                   <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg animate-pulse">
                     <Play className="w-8 h-8 text-blue-600 ml-1" />
@@ -53,6 +55,9 @@ export const WelcomeSection: React.FC = () => {
         <div
           className="fixed inset-0 bg-black/80 z-[100] flex items-center justify-center p-4 animate-fadeIn"
           onClick={() => setVideoModalOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="video-modal-title"
         >
           <div
             className="bg-white rounded-lg p-4 max-w-4xl w-full animate-slideUp"
@@ -62,12 +67,15 @@ export const WelcomeSection: React.FC = () => {
               <button
                 onClick={() => setVideoModalOpen(false)}
                 className="text-gray-500 hover:text-gray-700"
+                aria-label="Close video preview"
               >
                 <X className="w-6 h-6" />
               </button>
             </div>
             <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-              <p className="text-gray-600">YouTube Video Player Placeholder</p>
+              <p className="text-gray-600" id="video-modal-title">
+                YouTube Video Player Placeholder
+              </p>
             </div>
           </div>
         </div>
