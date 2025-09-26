@@ -192,7 +192,3 @@ a {
 .animation-delay-400 {
   animation-delay: 400ms;
 }
-
-.group-hover\\:rotate-360:hover {
-  transform: rotate(360deg);
-}

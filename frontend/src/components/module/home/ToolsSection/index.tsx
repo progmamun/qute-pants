@@ -39,21 +39,23 @@ export const ToolsSection: React.FC = () => {
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
           Try Our Informative & Others Tools
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center">
           {tools.map((tool, index) => (
             <a
               key={tool.id}
               href={tool.link}
-              className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl text-center hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer animate-fadeInUp"
+              className="group bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl text-center hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer animate-fadeInUp flex flex-col justify-center items-center"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="text-blue-500 mb-4 group-hover:rotate-360 transition-transform duration-500">
+              <div className="text-blue-500 mb-4 text-center transition-transform duration-500 flex justify-center">
                 {tool.icon}
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 text-center">
                 {tool.title}
               </h3>
-              <p className="text-sm text-gray-600">{tool.description}</p>
+              <p className="text-sm text-gray-600 text-center">
+                {tool.description}
+              </p>
             </a>
           ))}
         </div>

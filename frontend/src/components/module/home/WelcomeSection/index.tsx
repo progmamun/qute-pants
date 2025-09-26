@@ -40,7 +40,7 @@ export const WelcomeSection: React.FC = () => {
                   className="absolute inset-0 flex items-center justify-center"
                   aria-label="Open video preview"
                 >
-                  <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg animate-pulse">
+                  <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center group-hover transition-transform shadow-lg animate-pulse">
                     <Play className="w-8 h-8 text-blue-600 ml-1" />
                   </div>
                 </button>
