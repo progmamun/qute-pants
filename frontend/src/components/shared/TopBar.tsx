@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, ShoppingCart } from "lucide-react";
 
 export const TopBar: React.FC = () => {
   return (
@@ -17,6 +17,7 @@ export const TopBar: React.FC = () => {
           </div>
           <span>|</span>
           <button className="bg-primary px-4 py-1 rounded-md font-semibold hover:bg-accent transition-all">
+            <ShoppingCart className="inline px-1" />
             Buy Now
           </button>
         </div>

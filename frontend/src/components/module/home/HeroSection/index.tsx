@@ -44,7 +44,7 @@ export const HeroCarousel: React.FC = () => {
           }`}
         >
           <div className="text-center px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fadeInUp">
+            <h1 className="text-4xl md:text-6xl font-semibold mb-4 animate-fadeInUp">
               {slide.title}
             </h1>
             <p className="text-xl md:text-2xl mb-8 animate-fadeInUp animation-delay-200">

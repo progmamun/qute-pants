@@ -12,7 +12,7 @@ export const WelcomeSection: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fadeInUp">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">
+              <h2 className="text-4xl font-semibold mb-6 text-gray-900">
                 Welcome to Qute Pants
               </h2>
               <p className="text-lg text-gray-600 mb-4">

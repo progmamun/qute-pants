@@ -36,7 +36,7 @@ export const ToolsSection: React.FC = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-4xl font-semibold text-center mb-12 text-gray-900">
           Try Our Informative & Others Tools
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center">
@@ -50,7 +50,7 @@ export const ToolsSection: React.FC = () => {
               <div className="text-blue-500 mb-4 text-center transition-transform duration-500 flex justify-center">
                 {tool.icon}
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900 text-center">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900 text-center">
                 {tool.title}
               </h3>
               <p className="text-sm text-gray-600 text-center">

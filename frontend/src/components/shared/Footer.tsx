@@ -10,39 +10,37 @@ import {
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-foreground text-primary-foreground pt-12 border-t border-primary">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-blue-400">
-              Qute Pants
-            </h3>
+            <h3 className="text-2xl font-semibold mb-4">Qute Pants</h3>
             <p className="mb-4 text-gray-300">
               Your trusted partner for quality and comfort.
             </p>
             <div className="flex gap-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transform hover:-translate-y-1 transition-all"
+                className=" hover:text-blue-400 transform hover:-translate-y-1 transition-all"
               >
                 <Facebook className="w-6 h-6" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transform hover:-translate-y-1 transition-all"
+                className=" hover:text-blue-400 transform hover:-translate-y-1 transition-all"
               >
                 <Twitter className="w-6 h-6" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transform hover:-translate-y-1 transition-all"
+                className=" hover:text-blue-400 transform hover:-translate-y-1 transition-all"
               >
                 <Instagram className="w-6 h-6" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transform hover:-translate-y-1 transition-all"
+                className=" hover:text-blue-400 transform hover:-translate-y-1 transition-all"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
@@ -51,7 +49,7 @@ export const Footer: React.FC = () => {
 
           {/* Get Started Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Get Started</h3>
+            <h3 className="text-xl font-semibold mb-4">Get Started</h3>
             <ul className="space-y-2">
               {["About Us", "Products", "Size Guide", "FAQ", "Blog"].map(
                 (item) => (
@@ -70,7 +68,7 @@ export const Footer: React.FC = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Info</h3>
+            <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
@@ -89,14 +87,13 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-
-        {/* Copyright */}
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>
-            &copy; {new Date().getFullYear()} Qute Pants. All rights reserved. |
-            Privacy Policy | Terms of Service
-          </p>
-        </div>
+      </div>
+      {/* Copyright */}
+      <div className="border-t border-primary py-4 px-2 text-center text-gray-50 bg-accent">
+        <p>
+          &copy; {new Date().getFullYear()} Qute Pants. All rights reserved. |
+          Privacy Policy | Terms of Service
+        </p>
       </div>
     </footer>
   );
